@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(4, 78, 105);
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  overflow: hidden;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 2%;
+  text-shadow: 3px 3px 2px rgb(72, 73, 73);
+}
+.container {
+  box-shadow: 3px 3px 9px 0 black;
+  background-color: rgb(1, 68, 92);
+  border-radius: 1rem;
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  margin: 3% auto;
+  padding: 3%;
+}
+.timer {
+  background: rgb(4, 57, 76);
+  border-radius: 1rem;
+  padding: 1% 2%;
+  box-shadow: 1px 1px 6px 0 black;
+  align-self: flex-end;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0;
+}
+.ques {
+  font-size: 1.8rem;
+  margin-bottom: 5%;
+  text-shadow: 3px 3px 2px rgb(72, 73, 73);
+  text-align: center;
+}
+.input {
+  width: 30%;
+  padding: 1.5% 2%;
+  font-size: 1.1rem;
+  margin-bottom: 4%;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 5px 0 black;
+  border-radius: 1rem;
+  color: white;
+}
+input::placeholder {
+  color: rgb(170, 166, 166);
+}
+.btn {
+  padding: 1% 2.5%;
+  border-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: none;
+  transition: 0.3s;
+  text-shadow: 2px 2px 2px rgb(169, 171, 171);
+  box-shadow: 3px 3px 9px 0 black;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 9px 0 black;
+  color: white;
+  background-color: black;
+}
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 3px 3px 2px rgb(72, 73, 73);
+}
+.list-ans {
+  width: 50%;
+  margin: 3% auto;
+  text-align: center;
+}
+.list-ans li {
+  list-style: none;
+  margin: 1%;
+}
+
+/* media queries */
+@media (max-width: 912px) {
+  .input {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  .ques {
+    font-size: 1.6rem;
+  }
+  .input {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .ques {
+    font-size: 1.2rem;
+  }
+  .input {
+    width: 70%;
+    font-size: 0.9rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+}
